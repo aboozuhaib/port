@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <img src="2.jpg" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Life</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Goals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="btn">
+                    <a href="#">Keep in touch</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="card bg-dark">
+                <span class="person-overlay"></span>
+                <img src="1.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-12">
+                <h6 class="student">Student</h6>
+                <h1 class="name">Aboo Zuhaib</h1>
+                <p class="small-intro">Hello guyz, my name is Aboo Zuhaib Gasil.C.P - just 20 and I am a Btech student in Electronics and Communications at T.K.M.College of Engineering.</p>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".name, .student, .small-intro").lettering();
+
+                anime({
+                    targets: '.container .card .person-overlay',
+                    translateX : 1100,
+                    delay: 1000,
+                    duration: 1500,
+                    easing: 'easeInSine'
+                })
+                anime({
+                    targets: '.container .card img',
+                    opacity: 1,
+                    delay: 1500,
+                    duration: 1500,
+                    easing: 'easeInSine'
+                })
+                anime({
+                    targets: '.student span',
+                    opacity: 1,
+                    duration: 1500,
+                    easing: 'easeInSine',
+                    delay: anime.stagger(100, {start: 3000})
+                })
+                anime({
+                    targets: '.name span',
+                    opacity: 1,
+                    duration: 3000,
+                    easing: 'easeInSine',
+                    delay: anime.stagger(100, {start: 4500})
+                })
+                anime({
+                    targets: 'nav .container-fluid img',
+                    opacity: 1,
+                    duration: 3000,
+                    delay: 9500
+                })
+                anime({
+                    targets: 'nav .navbar-nav li',
+                    opacity: 1,
+                    duration: 3000,
+                    delay: anime.stagger(150, {start: 10500})
+                })
+                anime({
+                    targets: '.small-intro span',
+                    opacity: 1,
+                    duration: 1000,
+                    easing: 'easeInSine',
+                    delay: anime.stagger(50, {start: 11000})
+                })
+            });
+        </script>
+    </body>
+</html>

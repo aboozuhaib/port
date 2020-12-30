@@ -1,0 +1,90 @@
+body{
+    background-color: #1A1A2E;
+    font-family: 'Open Sans', sans-serif;
+}
+nav .container-fluid img{
+    height: 20px;
+    width: 20px;
+}
+nav .navbar-nav .nav-item{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav .navbar-nav .nav-item:last-child{
+    margin-right: 0;
+}
+nav .navbar-nav .nav-item a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+nav .navbar-nav .nav-item a:hover{
+    color: #E94560 !important;
+}
+nav .btn a{
+    background-color: #E94560;
+    color: #000;
+    padding: 14px 27px;
+    text-transform: uppercase;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-decoration: none;
+}
+nav .btn a:hover{
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.container{
+    max-width: 1266px !important;
+    margin: 0 auto !important;
+}
+.container .card{
+    float: right;
+    height: 550px;
+    width: 500px;
+    margin: 70px 180px 0;
+    position: relative;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+}
+.container .card .person-overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1A1A2E;
+    z-index: 99;
+}
+.container .col-12{
+    color: #fff;
+    margin-top: 220px;
+    position: absolute;
+}
+.container .col-12 h6{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 16px;
+}
+.container .col-12 h1{
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.container .col-12 p{
+    max-width: 500px;
+    font-size: 16px;
+    margin-top: 230px;
+}
+.container .col-12 .name span{
+    margin-right: 60px;
+    display: inline-block;
+}
+.container .col-12 .name span:last-child{
+    margin-right: 0;
+}
+.container .card img, .student span, .name span, nav .container-fluid img, nav .navbar-nav li, .small-intro span{
+    opacity: 0;
+}
